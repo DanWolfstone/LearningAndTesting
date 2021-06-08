@@ -1,0 +1,25 @@
+GIT Commands
+	init 	- creates a new repo from current folder
+	status	- checks the status of the files and commits in that folder
+	add		- Adds a file to the staging area (file1.js file2.js file3.js)
+	add .	- Adds everything in dir to staging
+	/* Staging area makes it easy for commiting selective files, eg all js/css */
+	log		- show log of commits to this repo
+	commit 	- makes change to local files // -m "put a commit message here, usually a reason"
+	/* I think commits make changes to the git file so that when you push it tells the file hey, these were updated */
+	push	- sends change to the github repo
+				// push <r_name> <branch>	| Push files upstream
+	pull	- downloads updated repo (changes only) & merges
+	merge	- merge with existing data
+				//merge <branch> 	  		| merge two branches together
+	/* if one file gets updated in the repo first you have to pull & merge, merge conflict occurs */
+	PR		- pull request means you changed something and you want to merge it
+	checkout- revert to specified version 
+				// checkout <branch>		| checks out the newest commit of chosen branch
+				// checkout -b <hash> 		| create a new branch to retain commits
+	branch 	- lists branches 
+				// branch <name> 	  		| create a new branch with the current state of your repo
+	remote 	- telling it an online/remote locat to push/pull code from
+				// remote add <r_name> <url>| add an online repo (name = var for url)
+				// remote -v 				| List all remotes
+				
