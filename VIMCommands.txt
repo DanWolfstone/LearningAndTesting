@@ -1,0 +1,23 @@
+Vim Commands: 
+	:q 	- quit
+	:q! 	- force quit
+	:w 	- save
+	:wq 	- Save & Quit // Commands are executed in order(?)
+	:set number - Adds Numbered lines
+	
+Modes
+	i = insert mode
+	esc = command mode
+	
+Edit Commands
+	dd 	= delete line
+	#dd 	= deletes # number of lines
+	u 	= undo
+	ctrl+r	= redo
+	/	= Search string (no space at the start) Will take you to first char
+	n	= next instance (in search)
+	shift+n	= last instance (in search)
+	:%s/X/Y	= Search X and replace with Y
+	+/g	= (Added onto prev) autoconfirm replace all
+	+/c	= (Added onto prev) confirm each replace
+ 
