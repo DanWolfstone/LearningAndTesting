@@ -12,7 +12,7 @@ print("hello World")
 # .index(str)                   # py equiv of .indexOf, find the index of specified char or phrase (output = start of index) +lists
 # .replace(str1, str2)          # replace char/phrase with another
 # str(<var>)                    # converts variable to string
-# int(<var>)    || float(<var>) # converts variable to int (whole#) or float (inf#)
+# int(<var>)    || float(<var>) # converts variable to int (whole#) or float (inf#) Can also put inputs in to directly sterilize 
 # note: You can also use the == and != operators with strings
 
 #/---------------- Numbers ----------------/#  // > from math import
@@ -121,4 +121,12 @@ elif (thisTrue == True):
 else:
     print("You shouldn't see this, but it's the else")
 
-# Left off at 1:55:00
+# Left off at 1:55:00 6/9
+# Resuming on 6/10
+
+def max_num(num1, num2, num3):
+   return max(num1, num2, num3)
+
+print(max_num(1,4000, 12))
+
+# too much shit goin on and I don't feel too well, I'll probably just play video games today.. I get my braces off tomorrow though!
