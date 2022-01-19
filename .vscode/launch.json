@@ -5,6 +5,27 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Launch HelloWorld",
+            "request": "launch",
+            "mainClass": "HelloWorld",
+            "projectName": "LearningAndTesting_90dd3ab3"
+        },
+        {
+            "type": "java",
+            "name": "Launch FaithPokemon",
+            "request": "launch",
+            "mainClass": "FaithPokemon",
+            "projectName": "LearningAndTesting_90dd3ab3"
+        },
+        {
+            "type": "java",
+            "name": "Launch FaithPokemon$Pokemon",
+            "request": "launch",
+            "mainClass": "FaithPokemon$Pokemon",
+            "projectName": "LearningAndTesting_90dd3ab3"
+        },
+        {
             "type": "pwa-node",
             "request": "launch",
             "name": "Launch Program",
