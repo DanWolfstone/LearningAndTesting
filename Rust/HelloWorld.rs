@@ -12,7 +12,8 @@ fn main() {
     // : i32    = year will be a 32 bit signed int (see std::* modules)
         // i8 | i16 | i32 | i64 | i128  || Signed
         // u8 | u16 | u32 | u64 | u128  || un-Signed 
-        // f32 | f64 || Floating Point Nums 
+        // na |	na	| f32 | f64  		|| Floating Point Nums 
+		
 
     let words: &str = "Hello!";
         println!("{}", words); // essentially the same as println(words)
@@ -33,5 +34,27 @@ fn main() {
         println!("{:?}", myArray3);
 
 
+    let a = [1, 2, 3, 4, 5];
+//           0  1  2  3  4 
+    let nice_slice = &a[1..4];
+    /* This creates an array with 1-5 as variables
+    // it's order is listed above
+    // &a = we're borrowing the variable a
+    //	* &i = borrowed immutable i
+    //	* &mut i = borrowed mutable i
+	//
+    // &a[startVal..endVal+1] 
+    // This means get vars from the start value to the
+	// end value + 1 (our end value is 3, so put 4) */ 
 
+
+    let cat = ("Furry McFurson", 3.5);
+    let (name, age) = cat;
+		// Just a Less concise way of doing this
+		let name 	= cat.1; 
+		let age 	= cat.2;
+    	println!("{} is {} years old.", name, age);
+	/* Apparently you don't need to assign a type (eg str, i32) 
+	// when you do this??? I would think that you do but.. guess not
+	*/
 }

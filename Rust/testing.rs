@@ -1,22 +1,25 @@
+use std::io;
 
 fn main() {
-    let mut array = Vec::new();
-    array.push(1);
-    array.push(2);
-    
-    assert_eq!(array.len(), 2);
-    assert_eq!(array[0], 1);
-    
-    assert_eq!(array.pop(), Some(2));
-    assert_eq!(array.len(), 1);
-    
-    array[0] = 7;
-    assert_eq!(array[0], 7);
-    
-    array.extend([1, 2, 3].iter().copied());
-    
-    for x in &array {
-        println!("{}", x);
-    }
-    assert_eq!(vec, [7, 1, 2, 3]);
+    let a = [1, 2, 3, 4, 5];
+
+    println!("Please enter an array index.");
+
+    let mut index = String::new();
+
+    io::stdin()
+        .read_line(&mut index)
+        .expect("Failed to read line");
+
+    let index: usize = index
+        .trim()
+        .parse()
+        .expect("Index entered was not a number");
+
+    let element = a[index];
+
+    println!(
+        "The value of the element at index {} is: {}",
+        index, element
+    );
 }
